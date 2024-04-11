@@ -1,0 +1,11 @@
+.surname{
+font-size: 10px;
+margin-left: 48px;
+margin-top: -10px;
+font-style:italic;
+}
+
+.phoimg{
+
+    transform: translateX(-20px);
+}

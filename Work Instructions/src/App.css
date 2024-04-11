@@ -1,0 +1,56 @@
+.app{
+  font-family: sans-serif;
+  size: 50px;
+}
+
+.phoenix {
+  font-size:20px;
+  font-weight: 1000px;
+  text-align: center;
+}
+
+
+.table{
+ text-align: center;
+ font-size: 25px;
+ transform: translateX(70px);
+ margin-top: 65px;
+ row-gap: 20px;
+ column-gap: 10px;
+}
+
+.thead{ 
+    background-color: #04AA6D;
+    color: white;
+}
+.parameters{ 
+    background-color: rgb(68, 51, 255);
+      color: white;
+}
+
+.buttons{
+  color: rgb(0, 110, 15);
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.buttons:hover {background-color: #3e8e41}
+.buttons:active {
+ 
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.bottom{
+
+  font-size: 23px;
+  align-items: baseline;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.submit{
+  margin-top:-10px;
+  font-size: 28px;
+  border-radius: 13px;
+}

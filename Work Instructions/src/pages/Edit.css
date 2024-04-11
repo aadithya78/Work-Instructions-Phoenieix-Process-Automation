@@ -1,0 +1,24 @@
+.list{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .Image{
+ background-color: rgb(150, 150, 253);
+ margin-top: 10px;
+ height: 100px;
+ width:100px;
+ margin-left: -30px;
+  }
+
+.Container{
+height: fit-content;
+font-size: small;
+}
+
+.Container2{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}

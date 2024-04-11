@@ -1,0 +1,328 @@
+<div className="list"> 
+ <div>
+ <label className="form-label">
+ N00 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="n00"
+ value={data.N00}
+ onChange={handleCChange}
+ />
+ </div>
+ <div >
+ <label className="form-label">
+ N10 - {/*Parameters*/}
+ </label>
+ <input 
+ type="checkbox"
+ name="n10"
+ value={data.N10}
+ onChange={handleCChange}
+ />
+ </div>
+ <div>
+ <label className="form-label">
+ N20 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="n20"
+ value={data.N20}
+ onChange={handleCChange}
+ />
+ </div>
+ <div >
+ <label className="form-label">
+ W00 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="w00"
+ value={data.w00}
+ onChange={handleCChange}
+ />
+ </div>
+ <div>
+ <label className="form-label">
+ W10 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="w10"
+ value={data.w10}
+ onChange={handleCChange}
+ />
+ </div>
+ <div >
+ <label className="form-label">
+ W60 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="w60"
+ value={data.w60}
+ onChange={handleCChange}
+ />
+ </div>
+ <div >
+ <label className="form-label">
+ W70 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="w70"
+ value={data.w70}
+ onChange={handleCChange}
+ />
+ </div>
+ <div >
+ <label className="form-label">
+ W80 - {/*Parameters*/}
+ </label>
+ <input
+ type="checkbox"
+ name="w80"
+ value={data.w80}
+ onChange={handleCChange}
+ />
+ </div>
+ </div> 
+
+________________________________
+
+<div className="container">
+
+ <div className="row align-items-start"> 
+      <div className="fw-bold fs-4 mt-5 col-md-3 ms-5">
+          <div>
+            <label className="form-label">N00 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="n00" value={data.N00} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">N10 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="n10" value={data.N10} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">N20 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="n20" value={data.N20} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">W00 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="w00" value={data.w00} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">W10 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="w10" value={data.w10} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">W60 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="w60" value={data.w60} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">W70 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="w70" value={data.w70} onChange={handleCChange} />
+          </div>
+          <div>
+            <label className="form-label">W80 - {/*Parameters*/}</label>
+            <input className="ms-auto" type="checkbox" name="w80" value={data.w80} onChange={handleCChange} />
+          </div>
+      
+      </div>
+
+      {/* Second Column */}
+      <div className="col-md-6">
+        <div>
+          <label className="mr-5">Operation Key Point</label>
+          <input className="w-20" type="text" name="Operation Key Point" value={data.okp} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="">Process Mark</label>
+          <input className="" type="text" name="Process Mark" value={data.process_mark} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Inspection Method</label>
+          <input className="" type="text" name="Inspection Method" value={data.inspection_method} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Control Item</label>
+          <input className="" type="text" name="Control Item" value={data.control_item} onChange={handleChange} />
+        </div>
+        <div>
+          <label  className="form-label">Control Method</label>
+          <input className=""type="text" name="Control Method" value={data.control_method} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Characteristics</label>
+          <input className="" type="text" name="Characteristics" value={data.characteristics} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Criteria</label>
+          <input className="" type="text" name="Criteria" value={data.criteria} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Acceptance / Judgement</label>
+          <input className="" type="text" name="Acceptance / Judgement" value={data.accOrjudge} onChange={handleChange} />
+        </div>
+        <div>
+          <label className="form-label">Reference Documents</label>
+          <input className="" type="text" name="Reference Documents" value={data.refdoc} onChange={handleChange} />
+        </div>
+      </div>
+    </div>
+   </div>
+
+________________________________________________________
+
+<div className="mt-2">
+  <table className="">
+    <thead >
+      <tr>
+        <th className="text-start">Applicability</th>
+        <th className="text-center">Assurance & Check Items</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <label className="form-label">N00</label>
+          <input className="ms-2" type="checkbox" name="n00" value={data.N00} onChange={handleCChange} />
+        </td>
+        <td>
+        <div className="input-group ms-auto">
+             <div className="input-group-prepend">
+                <span className="input-group-text" id="">Operation Key Point</span>
+             </div>
+                <input type="text" className="form-control" name="Operation Key Point" value={data.okp} onChange={handleChange}/>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">N10</label>
+          <input className="ms-2" type="checkbox" name="n10" value={data.N10} onChange={handleCChange} />
+        </td>
+        <td>
+        <div className="input-group">
+           <div className="input-group-prepend">
+          <span className="input-group-text" >Process Mark</span>
+           </div>
+          <input type="text" className="form-control" name="Process Mark" value={data.process_mark} onChange={handleChange}/>
+        </div>
+       </td>
+
+
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">N20</label>
+          <input className="ms-2" type="checkbox" name="n20" value={data.N20} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text" >Inspection Method</span>
+       </div>
+          <input type="text" className="form-control" name="Inspection Method" value={data.inspection_method} onChange={handleChange}/>
+  </div>
+</td>
+     </tr>
+      <tr>
+        <td>
+          <label className="form-label">W00</label>
+          <input className="ms-2" type="checkbox" name="w00" value={data.w00} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text" >Control Item</span>
+       </div>
+          <input type="text" className="form-control" name="Control Item" value={data.control_item} onChange={handleChange}/>
+  </div>
+</td>
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">W10</label>
+          <input className="ms-2" type="checkbox" name="w10" value={data.w10} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text" >Control Method</span>
+       </div>
+          <input type="text" className="form-control" name="Control Method" value={data.control_method} onChange={handleChange}/>
+  </div>
+</td>
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">W60</label>
+          <input className="ms-2" type="checkbox" name="w60" value={data.w60} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text">Characteristics</span>
+       </div>
+          <input type="text" className="form-control" name="Characteristics" value={data.characteristics} onChange={handleChange}/>
+  </div>
+</td>
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">W70</label>
+          <input className="ms-2" type="checkbox" name="w70" value={data.w70} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text" >Criteria</span>
+       </div>
+          <input type="text" className="form-control" name="Crtiteria" value={data.criteria} onChange={handleChange}/>
+  </div>
+</td>
+      </tr>
+      <tr>
+        <td>
+          <label className="form-label">W80</label>
+          <input className="ms-2" type="checkbox" name="w80" value={data.w80} onChange={handleCChange} />
+        </td>
+        <td>
+  <div className="input-group">
+       <div className="input-group-prepend">
+          <span className="input-group-text" id="">Reference Documents</span>
+       </div>
+          <input type="text" className="form-control" name="Reference Documents" value={data.refdoc} onChange={handleChange}/>
+  </div>
+</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+____________________
+
+import React, { useState } from 'react';
+
+function NextClick({ data, setData }) {
+  const handleClick = () => {
+    setData(prevData => ({
+      ...prevData,
+      steps: prevData.steps + 1
+    }));
+  };
+
+  return (
+    <button onClick={handleClick}>
+      Go to Step {data.steps + 1}
+    </button>
+  );
+}
+
+export default NextClick;
+
+____________________________________
+ `https://sheet.best/api/sheets/e4049191-22fa-427b-8b43-aa1b4c1870aa/${rowIndex}`
+
